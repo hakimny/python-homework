@@ -10,7 +10,8 @@ if isfile(file_path):
     for line in my_file.readlines():
         # Strip will remove any `extra` characters that might be misinterpreted when reading a string
         stripped_line = line.strip()
-        print(stripped_line)
+        #print(stripped_line)
+        print(list(stripped_line.split(" ")))
 
     # It's important to close files after they've been used to avoid a `resources leak` on the os
     my_file.close()
